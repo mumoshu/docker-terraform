@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -x
+
+IMAGE_ID=$(docker build .)
+
+docker tag $IMAGE_ID mumoshu/docker-terraform:latest
